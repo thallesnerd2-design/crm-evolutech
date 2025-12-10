@@ -6,6 +6,6 @@ services:
     container_name: crm-api
     env_file: .env
     ports:
-      - "3008:3008"
+      - "3002:3002"
     restart: always
 

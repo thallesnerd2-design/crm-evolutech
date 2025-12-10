@@ -15,7 +15,7 @@ COPY .env ./.env
 # Copia o restante do código
 COPY . .
 
-EXPOSE 3008
+EXPOSE 3002
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3008"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3002"]
 
