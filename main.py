@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from models import CRMRecord, ConfigModel
@@ -534,5 +535,6 @@ async def delete_config():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", "3008"))
+    uvicorn.run(app, host="0.0.0.0", port=port)
 

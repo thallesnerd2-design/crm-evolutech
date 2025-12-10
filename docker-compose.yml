@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: crm-api
+    env_file: .env
+    ports:
+      - "3008:3008"
+    restart: always
+
