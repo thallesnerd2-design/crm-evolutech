@@ -1,0 +1,10 @@
+# Configuração do MongoDB
+# Copie este conteúdo para um arquivo .env na raiz do projeto
+
+MONGODB_URL=mongodb://localhost:27017
+DATABASE_NAME=crm_database
+COLLECTION_NAME=crm_records
+
+# Para MongoDB Atlas (cloud), use:
+# MONGODB_URL=mongodb+srv://usuario:senha@cluster.mongodb.net/?retryWrites=true&w=majority
+
